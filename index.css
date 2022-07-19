@@ -42,21 +42,19 @@ button {
     border: none;
     font-weight: 700;
     border-radius: 5px;
-    width: 80%;
+    width: 90%;
     height: 10%;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
 #icon {
     float: left;
-    width: 20px;
-    height: 40px;
+    width: 40px;
+    height: 20px;
+    object-fit: contain;
+    content: url("./images/icon-cart.svg");
 }
 
 .container {
@@ -81,16 +79,16 @@ button:hover {
 #perfume {
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 10%;
+    margin: 15% 5% 10%;
 }
 
 #perfume-name {
     font-family: Fraunces;
-    margin: 10%;
+    margin: 10% 5%;
 }
 
 #perfume-description {
-  margin: 0 10%;
+  margin: 0 5%;
   line-height: 25px;
 }
 
@@ -99,15 +97,15 @@ button:hover {
     width: 25%;
     font-family: Fraunces;
     color: hsl(158, 36%, 37%);
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 #old-price {
     display: inline-block;
-    width: 55%;
+    width: 65%;
     text-decoration: line-through;
     text-align: center;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 @media (max-width: 800px) {
