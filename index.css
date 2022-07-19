@@ -112,21 +112,33 @@ button:hover {
 
 @media (max-width: 800px) {
 
+    body {
+        align-items: center;
+        grid-template-columns: 0.1fr 2fr 0.1fr;
+        grid-template-rows: 0.1fr 2fr 0.25fr 0.75fr;
+        grid-template-areas: 
+        ". . ."
+        ". container ."
+        ". footer ."
+        ". . .";
+    }
+
     img {
       width: 100%;
       content: url(./images/image-product-mobile.jpg);
-      height: 500px;
+      object-fit: cover;
       border-radius: 10px 10px 0 0;
-    }
-
-    footer {
-        display: block;
-        
-    }
+    }    
 
     .container {
         flex-direction: column;
-        width: 600px;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 5%;
+    }
+
+    #perfume, #perfume-name, #perfume-description {
+        margin: 5% 10%;
     }
 
     .mobile {
@@ -135,6 +147,7 @@ button:hover {
 
     #description-container {
       width: 100%;
+      height: fit-content;
     }
   } 
 
